@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="grid grid--3-cols">
+        <label for="imageCount" class="heading-tertiary"
+          >Şəkil sayını daxil edin:</label
+        >
+        <input type="number" id="imageCount" min="1" max="10" />
+        <button class="btn" onclick="generateImages()">
+          Şəkilləri Yaradın
+        </button>
+      </div>
+      <div class="grid grid--4-cols">
+        <button class="btn" onclick="addImage()">Şəkil Əlavə Et</button>
+        <button class="btn" onclick="removeImage()">Şəkili Sil</button>
+        <button class="btn" onclick="changeImage()">Şəkili Dəyişdir</button>
+        <button class="btn" onclick="resizeImage()">
+          Şəklin Ölçüsünü Dəyişdir
+        </button>
+      </div>
+
+      <div id="images" class="grid grid--4-cols"></div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
